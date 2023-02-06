@@ -1,0 +1,36 @@
+@import '../../styles/variaveis';
+
+.footer {
+    height: 80px;
+    background-color: $azul-rodape;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    &__social {
+        ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li {
+                margin-right: 36px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__creditos {
+        margin: 0;
+        color: $cor-do-texto;
+        font-family: $fonte-normal;
+        a {
+            color: $rosa;
+            text-decoration: none;
+        }
+    }
+}
